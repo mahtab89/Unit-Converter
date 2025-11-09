@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Unit conversion app</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<div class="main">
+    <h1>Unit Conversion App</h1>
+
+    <div class="tabs">
+        <button class="tab active" data-type="length">Length</button>
+        <button class="tab" data-type="weight">Weight</button>
+        <button class="tab" data-type="temperature">Temperature</button>
+    </div>
+
+    <input
+            type="number"
+            id="inputValue"
+            inputmode="numeric"
+            placeholder="eg. 123..."
+    />
+
+    <div class="dropdown">
+        <div class="from">
+            <label for="from">From:</label>
+            <select id="from"></select>
+        </div>
+        <div class="to">
+            <label for="to">To:</label>
+            <select id="to"></select>
+        </div>
+    </div>
+
+    <button id="convertBtn">Convert</button>
+    <h3 id="result">Click convert to show the result</h3>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
