@@ -1,43 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Unit conversion app</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-<div class="main">
-    <h1>Unit Conversion App</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Conversion App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
-    <div class="tabs">
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fas fa-flask"></i>
+      </div>
+      <h1 class="title">Unit Converter</h1>
+    </nav>
+
+    <!-- Main content -->
+    <div class="main">
+      <h1>Unit Conversion App</h1>
+
+      <div class="tabs">
         <button class="tab active" data-type="length">Length</button>
         <button class="tab" data-type="weight">Weight</button>
         <button class="tab" data-type="temperature">Temperature</button>
-    </div>
+      </div>
 
-    <input
-            type="number"
-            id="inputValue"
-            inputmode="numeric"
-            placeholder="eg. 123..."
-    />
+      <input
+        type="number"
+        id="inputValue"
+        inputmode="numeric"
+        placeholder="eg. 123..."
+      />
 
-    <div class="dropdown">
+      <div class="dropdown">
         <div class="from">
-            <label for="from">From:</label>
-            <select id="from"></select>
+          <label for="from">From:</label>
+          <select id="from"></select>
         </div>
         <div class="to">
-            <label for="to">To:</label>
-            <select id="to"></select>
+          <label for="to">To:</label>
+          <select id="to"></select>
         </div>
+      </div>
+
+      <button id="convertBtn">Convert</button>
+      <h3 id="result">Click convert to show the result</h3>
     </div>
 
-    <button id="convertBtn">Convert</button>
-    <h3 id="result">Click convert to show the result</h3>
-</div>
-<script src="script.js"></script>
-</body>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2025 Unit Converter | Built with ❤️ using Spring Boot</p>
+      <div class="footer-icons">
+        <a
+          href="https://github.com/mahtab89/Unit-Converter"
+          target="_blank"
+          title="GitHub"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://unit-converter-app-nlp5.onrender.com"
+          target="_blank"
+          title="Live Demo"
+        >
+          <i class="fas fa-globe"></i>
+        </a>
+        <a href="mailto:mdmahtabyasin.com" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

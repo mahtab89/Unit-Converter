@@ -11,12 +11,34 @@ body {
   min-height: 100vh;
   background: linear-gradient(135deg, #1e1e2f, #2a2a4a);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
   color: #fff;
-  padding: 20px;
+  align-items: center;
+}
+/* Navbar */
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 15px;
+  border-bottom: 3px solid #00bcd4;
 }
 
+.navbar .logo {
+  font-size: 1.8rem;
+}
+
+.navbar .title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+/* Main */
 .main {
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(12px);
@@ -171,6 +193,36 @@ h3 {
   color: #b0b0cc;
   font-size: 0.95rem;
 }
+
+/* Footer */
+.footer {
+  width: 100%;
+  background-color: #1e1e1e;
+  color: #ccc;
+  text-align: center;
+  padding: 15px 10px;
+  border-top: 3px solid #00bcd4;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+.footer-icons {
+  margin-top: 8px;
+}
+
+.footer-icons a {
+  color: #00bcd4;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.4rem;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.footer-icons a:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
 
 @media (max-width: 600px) {
   body {
